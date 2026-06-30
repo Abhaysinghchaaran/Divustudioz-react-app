@@ -6,8 +6,14 @@ function ServiceCard({ title, description, link }) {
   return (
     <div className="service-card">
       <h2>{title}</h2>
-      <p>{description}</p>
-      <Link to={link}>View More</Link>
+      <p>
+        {description}{" "}
+        {link && (
+          <Link to={link} className="view-more">
+            View More
+          </Link>
+        )}
+      </p>
     </div>
   );
 }
