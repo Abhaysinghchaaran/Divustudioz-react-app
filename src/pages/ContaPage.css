@@ -1,0 +1,49 @@
+/* src/pages/Contact.css */
+
+/* 
+  Assumption: header/footer are siblings of the element rendering 
+  <Contact /> inside a flex-column body, e.g.:
+  <body>
+    <header>...</header>
+    <main><Contact /></main>   <-- or Contact rendered directly as a route
+    <footer>...</footer>
+  </body>
+  Adjust the selector below if your app wraps things differently (e.g. #root, .app).
+*/
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-page {
+  flex: 1 1 auto;       /* fills all space between header and footer */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* children stretch left-to-right */
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;      /* scrolls internally if content overflows */
+  background: #fafafa;
+}
+
+.contact-page h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-page p {
+  font-size: 1.05rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}

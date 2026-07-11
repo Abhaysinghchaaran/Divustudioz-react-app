@@ -23,25 +23,36 @@
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   text-align: left;
 }
 
 .service-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  background: #222;
 }
 
 .service-card h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #333;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover h2 {
+  color: #fff;
 }
 
 .service-card p {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover p {
+  color: #f0f0f0;
 }
 
 .service-card .view-more {
@@ -53,6 +64,6 @@
 }
 
 .service-card .view-more:hover {
-  color: #005fa3;
+  color: #66b3ff;
   text-decoration: underline;
 }

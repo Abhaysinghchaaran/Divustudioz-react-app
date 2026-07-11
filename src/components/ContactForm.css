@@ -1,8 +1,10 @@
 /* src/components/ContactForm.css */
 
 .contact-form {
-  max-width: 600px;
-  margin: 40px auto;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;        /* stretches full width instead of capping at 600px */
+  margin: 0;
   padding: 30px;
   background: #ffffff;
   border-radius: 12px;
@@ -11,6 +13,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;        /* scrolls internally on very small viewports */
+}
+
+.contact-form * {
+  box-sizing: border-box;
 }
 
 .contact-form label {
@@ -24,13 +32,27 @@
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
+  width: 100%;
   margin-top: 8px;
   padding: 12px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
+  color: #222;
+  background: #fff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form select:hover {
+  border-color: #aaa;
 }
 
 .contact-form input:focus,
@@ -41,9 +63,36 @@
   box-shadow: 0 0 0 3px rgba(0, 120, 215, 0.2);
 }
 
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form select:focus-visible,
+.contact-form button:focus-visible {
+  outline: 2px solid #0078d7;
+  outline-offset: 2px;
+}
+
+.contact-form input:disabled,
+.contact-form textarea:disabled,
+.contact-form select:disabled {
+  background: #f2f2f2;
+  color: #888;
+  cursor: not-allowed;
+  border-color: #ddd;
+}
+
 .contact-form textarea {
   min-height: 120px;
   resize: vertical;
+}
+
+.contact-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23555'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 18px;
+  padding-right: 40px;
+  cursor: pointer;
 }
 
 .contact-form button {
@@ -66,4 +115,16 @@
 
 .contact-form button:active {
   transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .contact-form button {
+    align-self: stretch;
+    text-align: center;
+  }
 }
