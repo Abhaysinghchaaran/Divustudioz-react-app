@@ -2,14 +2,23 @@
 
 .about-page {
   text-align: right;
-  padding: 140px 90px;
+  padding: 110px 90px;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+
+  /* Combine gradient + image */
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(233, 223, 223, 0.6)),
+    url('../assets/About.jpg');
+  background-size: cover;       /* ensures image fills container */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+
   flex: 1;               
   overflow-y: auto;   
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);    
 }
+
 .about-page h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -19,23 +28,16 @@
 }
 
 .about-page p {
-   font-size: 1rem;
-  max-width: 600px;     /* keeps paragraph block narrow */
-  margin-left: auto;    /* pushes block to the right */
-  margin-right: 0;      /* flush against right padding */
-  text-align: justify;    /* aligns text lines to the right edge */
-  margin-bottom: 20px;  /* spacing between paragraphs */
+  font-size: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: justify;
+  margin-bottom: 20px;
   color: #333;
 }
 
 .about-page p:last-child {
   font-style: italic;
   color: #555;
-}
-
-/* Optional subtle background */
-.about-page {
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
