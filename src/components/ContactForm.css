@@ -117,6 +117,18 @@
   transform: translateY(0);
 }
 
+.contact-error {
+  margin: 0;
+  color: #b00020;
+  font-weight: 600;
+}
+
+.contact-success {
+  margin: 0;
+  color: #0a7a2f;
+  font-weight: 600;
+}
+
 @media (max-width: 480px) {
   .contact-form {
     padding: 20px;
@@ -128,3 +140,4 @@
     text-align: center;
   }
 }
+

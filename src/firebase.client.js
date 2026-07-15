@@ -1,5 +1,5 @@
 // Firebase client SDK initialization (Firestore)
-// Uses Vite env vars (VITE_FIREBASE_*). Create/complete your .env file accordingly.
+// Uses Vite env vars. Ensure you have a .env with VITE_FIREBASE_* values.
 
 import { initializeApp, getApps } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
@@ -13,10 +13,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
-
-// Debug: confirm which Firebase project the frontend is connected to
-console.log("Firebase projectId:", firebaseConfig.projectId);
-
 
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 

@@ -19,6 +19,30 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);    
 }
 
+@media (max-width: 900px) {
+  .about-page {
+    padding: 90px 30px;
+    text-align: center;
+  }
+  .about-page h1 {
+    text-align: center;
+  }
+  .about-page p {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 80px 16px;
+  }
+  .about-page h1 {
+    font-size: 2rem;
+  }
+}
+
 .about-page h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
