@@ -1,20 +1,25 @@
 /* src/components/ServiceCard.css */
 
-.services-container {
-  padding: 40px;
-  text-align: center;
-}
+/* Desktop-only grid — matches original desktop layout exactly.
+   Scoped to min-width so it never conflicts with Services.css's
+   mobile/tablet media queries. */
+@media (min-width: 1025px) {
+  .services-container {
+    padding: 40px;
+    text-align: center;
+  }
 
-.services-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #222;
-}
+  .services-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #222;
+  }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per row */
-  gap: 30px;
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }
 
 .service-card {
