@@ -87,6 +87,7 @@ function ContactForm() {
           <option value="">-- Select an option --</option>
           <option value="datasets">Datasets</option>
           <option value="partner">Become a partner</option>
+          <option value="other">Other</option>
         </select>
       </label>
 

@@ -9,9 +9,6 @@ function HomePage() {
 
       <div className="Hero"><h1>DIVUSTUDIOZ</h1>
         <h2>Creating Content. Capturing Reality. Powering Intelligence.</h2>
-        <p>
-        Media & Content Studio · Egocentric AI Data · Mumbai, India
-        </p> 
       </div>
 
       {/* New Highlights Section */}

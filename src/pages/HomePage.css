@@ -14,7 +14,7 @@
 
 .homepage h2 {
   font-size: 1.5rem;
-  margin: 25px 0 15px 0;
+  margin: 4px 0 32px 0;
   color: #555;
   font-weight: 400;
 }
@@ -43,7 +43,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.4)), url('../assets/Homebackground.png');
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(244, 237, 237, 0.4)), url('../assets/Homebackground.png');
   color: #000;
 }
 
