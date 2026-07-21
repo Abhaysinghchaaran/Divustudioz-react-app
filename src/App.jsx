@@ -6,6 +6,11 @@ import About from "./pages/AboutPage";
 import Services from "./pages/Services"; 
 import ScriptedMovies from "./pages/ScriptedMovies";
 import Contact from "./pages/ContactPage";
+import EgocentricContent from "./pages/EgocentricContent";
+import EpisodicContent from "./pages/EpisodicContent";
+import Animation from "./pages/Animation";
+import Information from "./pages/Information";
+import InteractiveAnimation from "./pages/InteractiveAnimation";
 
 function App() {
   return (
@@ -15,8 +20,11 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
         <Route path="services/scriptedMovies" element={<ScriptedMovies />} />
-        <Route path="services/ui-ux-design" element={<div>UI/UX Design Service</div>} />
-        <Route path="services/security-audit" element={<div>Security Audit Service</div>} />
+         <Route path="services/episodicContent" element={<EpisodicContent />} />
+         <Route path="services/animation" element={<Animation />} />
+         <Route path="services/egocentricContent" element={<EgocentricContent />} />
+         <Route path="services/information" element={<Information />} />
+         <Route path="services/interactiveAnimation" element={<Animation />} />
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>
