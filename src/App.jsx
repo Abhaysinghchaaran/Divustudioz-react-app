@@ -11,6 +11,7 @@ import EpisodicContent from "./pages/EpisodicContent";
 import Animation from "./pages/Animation";
 import Information from "./pages/Information";
 import InteractiveAnimation from "./pages/InteractiveAnimation";
+import ContentDistribution from "./pages/ContentDistribution";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
+        <Route path= "Services/ContentDistribution" element={<ContentDistribution/>} />
         <Route path="services/scriptedMovies" element={<ScriptedMovies />} />
          <Route path="services/episodicContent" element={<EpisodicContent />} />
          <Route path="services/animation" element={<Animation />} />

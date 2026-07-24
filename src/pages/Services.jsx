@@ -6,6 +6,12 @@ function Services() {
     <div className="services-container">
       <h1>Our Services</h1>
       <div className="services-grid">
+        <ServiceCard 
+        title= "Content Distribution and Localisation"
+        description= "We deliver seamless Content Distribution and Localisation services that help your brand connect with audiences worldwide in their own language and culture."
+        link= "/Services/ContentDistribution"
+        />
+    
         <ServiceCard
           title="Scripted Movies"
           description="Development and production of original films across multiple genres for digital and theatrical platforms."
